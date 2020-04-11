@@ -16,30 +16,30 @@ class LinkedListDeque(DequeInterface):
     def is_empty(self) -> bool:
         return self._head == None
 
-    def add_first(self, item: object) -> None:
+    def add_front(self, item: object) -> None:
         self._head = Node(item, self._head)
 
-    def add_last(self, item: object) -> None:
+    def add_rear(self, item: object) -> None:
         if self.is_empty():
-            self.add_first(item)
+            self.add_front(item)
         else:
             current = self._head
             while current.next is not None:
                 current = current.next
             current.next = Node(item, None)
 
-    def remove_first(self) -> object:
+    def remove_front(self) -> object:
         if self.is_empty():
             return None
         item = self._head.data
         self._head = self._head.next
         return item
 
-    def remove_last(self) -> object:
+    def remove_rear(self) -> object:
         if self.is_empty():
             return None
         if self._head.next is None:
-            return self.remove_first()
+            return self.remove_front()
 
         current = self._head
         while current.next.next is not None:
@@ -54,30 +54,30 @@ class TailedLinkListDeque(LinkedListDeque):
         super().__init__()
         self._tail = None
 
-    def add_first(self, item: object) -> None:
-        super().add_first(item)
+    def add_front(self, item: object) -> None:
+        super().add_front(item)
         if self._tail is None:
             self._tail = self._head
 
-    def add_last(self, item: object) -> None:
+    def add_rear(self, item: object) -> None:
         if self.is_empty():
-            self.add_first(item)
+            self.add_front(item)
         else:
             new_node = Node(item, None)
             self._tail.next = new_node
             self._tail = new_node
 
-    def remove_first(self) -> object:
-        item = super().remove_first()
+    def remove_front(self) -> object:
+        item = super().remove_front()
         if self._head is None:
             self._tail = None
         return item
 
-    def remove_last(self) -> object:
+    def remove_rear(self) -> object:
         if self.is_empty():
             return None
         if self._head == self._tail:
-            return self.remove_first()
+            return self.remove_front()
 
         current = self._head
         while current.next is not self._tail:

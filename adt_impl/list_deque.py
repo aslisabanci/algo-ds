@@ -12,16 +12,16 @@ class ListDeque(DequeInterface):
     def is_empty(self) -> bool:
         return len(self) == 0
 
-    def add_first(self, item: object) -> None:
+    def add_front(self, item: object) -> None:
         self._items.insert(0, item)
 
-    def add_last(self, item: object) -> None:
+    def add_rear(self, item: object) -> None:
         self._items.append(item)
 
-    def remove_first(self) -> object:
+    def remove_front(self) -> object:
         return self._items.pop(0)
 
-    def remove_last(self) -> object:
+    def remove_rear(self) -> object:
         return self._items.pop()
 
 

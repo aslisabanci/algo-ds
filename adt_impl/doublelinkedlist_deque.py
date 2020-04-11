@@ -23,21 +23,21 @@ class DoubleLinkedListDeque(DequeInterface):
     def is_empty(self) -> bool:
         return self._head == None
 
-    def add_first(self, item: object) -> None:
+    def add_front(self, item: object) -> None:
         new_node = DoubleNode(data=item, prev=None, next=self._head)
         self._head = new_node
         if self._tail is None:
             self._tail = self._head
 
-    def add_last(self, item: object) -> None:
+    def add_rear(self, item: object) -> None:
         if self.is_empty():
-            self.add_first(item)
+            self.add_front(item)
         else:
             new_node = DoubleNode(data=item, next=None, prev=self._tail)
             self._tail.next = new_node
             self._tail = new_node
 
-    def remove_first(self) -> object:
+    def remove_front(self) -> object:
         if self.is_empty():
             return None
         item = self._head.data
@@ -48,11 +48,11 @@ class DoubleLinkedListDeque(DequeInterface):
             self._head.prev = None
         return item
 
-    def remove_last(self) -> object:
+    def remove_rear(self) -> object:
         if self.is_empty():
             return None
         if self._head == self._tail:
-            return self.remove_first()
+            return self.remove_front()
 
         item = self._tail.data
         self._tail = self._tail.prev

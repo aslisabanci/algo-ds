@@ -4,19 +4,19 @@ from abc import ABCMeta, abstractmethod
 
 class DequeInterface(metaclass=ABCMeta):
     @abstractmethod
-    def add_first(self, item:object) -> None:
+    def add_front(self, item:object) -> None:
         raise NotImplementedError
 
     @abstractmethod
-    def add_last(self, item:object) -> None:
+    def add_rear(self, item:object) -> None:
         raise NotImplementedError
 
     @abstractmethod
-    def remove_first(self) -> object:
+    def remove_front(self) -> object:
         raise NotImplementedError
 
     @abstractmethod
-    def remove_last(self) -> object:
+    def remove_rear(self) -> object:
         raise NotImplementedError
 
     @abstractmethod

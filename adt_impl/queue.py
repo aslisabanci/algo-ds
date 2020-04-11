@@ -45,7 +45,3 @@ class QueueWithFakeDeleteAndCleanUp(Queue):
 
     def __len__(self):
         return super().__len__() - self._head
-
-
-# PATLATGELSIN: unit tests for queue
-# PATLATGELSIN: unit tests for fake delete queue
