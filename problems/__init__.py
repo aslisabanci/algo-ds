@@ -1,0 +1,1 @@
+from adt_impl import Stack
