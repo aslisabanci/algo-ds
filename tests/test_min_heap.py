@@ -1,8 +1,9 @@
 from adt_impl.binary_heap import BinaryHeap
+import operator
 
 
 def test_push_pop():
-    bh = BinaryHeap()
+    bh = BinaryHeap(comp_fn=operator.lt)
     bh.push(5)
     bh.push(9)
     bh.push(11)
@@ -20,44 +21,44 @@ def test_push_pop():
 
 
 def test_build():
-    bh = BinaryHeap()
+    bh = BinaryHeap(comp_fn=operator.lt)
     bh.build([11, 21, 5, 9, 27, 14, 18, 19, 33, 17])
     assert bh.items == [0, 5, 9, 11, 19, 17, 14, 18, 21, 33, 27]
 
 
 def test_build_single_item():
-    bh = BinaryHeap()
+    bh = BinaryHeap(comp_fn=operator.lt)
     bh.build([3])
     assert bh.items == [0, 3]
 
 
 def test_pop_from_single_item_heap():
-    bh = BinaryHeap()
+    bh = BinaryHeap(comp_fn=operator.lt)
     bh.build([3])
     assert bh.items == [0, 3]
     assert bh.pop() == 3
 
 
 def test_push_pop_single_item():
-    bh = BinaryHeap()
+    bh = BinaryHeap(comp_fn=operator.lt)
     bh.push(5)
     assert bh.pop() == 5
 
 
 def test_pop_from_empty_heap():
-    bh = BinaryHeap()
+    bh = BinaryHeap(comp_fn=operator.lt)
     assert bh.pop() == None
 
 
 def test_pop_until_empty():
-    bh = BinaryHeap()
+    bh = BinaryHeap(comp_fn=operator.lt)
     bh.push(5)
     assert bh.pop() == 5
     assert bh.pop() == None
 
 
 def test_push_pop_with_zero():
-    bh = BinaryHeap()
+    bh = BinaryHeap(comp_fn=operator.lt)
     bh.push(25)
     bh.push(7)
     bh.push(13)
