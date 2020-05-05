@@ -1,10 +1,13 @@
-# TODO:
-"""
-Large integers are represented as list of digits. Sum them.
-"""
-
-
 def sum_two_str_ints(num1: str, num2: str) -> int:
+    """Sums up two integers that are represented as a list of string digits.
+
+    Arguments:
+        num1 {str} -- First integer as a string
+        num2 {str} -- Second integer as a string
+
+    Returns:
+        int -- Sum of given two integers
+    """
     result = []
     idx = 0
 
