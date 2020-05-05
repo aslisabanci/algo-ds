@@ -45,11 +45,3 @@ class Graph:
     def add_two_way_edge(self, from_key: str, to_key: str, weight: int) -> None:
         from_v, to_v = self._connect_edges_one_way(from_key, to_key, weight)
         to_v.connect_to(from_v, weight)
-
-
-# graph = Graph()
-# graph.add_edge("davi", "nimcaps", 42)
-# graph.add_edge("nimcaps", "bjj", 45)
-# graph.add_edge("nimcaps", "davi", 5)
-# print(graph.verts["davi"].connections)
-# print(graph.verts["nimcaps"].connections)

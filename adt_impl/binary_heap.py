@@ -17,7 +17,6 @@ class BinaryHeap:
     def _move_up_item_at(self, i):
         while i // 2 > 0:
             if self.fn(self.items[i], self.items[i // 2]):
-                # if self.items[i // 2] > self.items[i]:
                 temp = self.items[i // 2]
                 self.items[i // 2] = self.items[i]
                 self.items[i] = temp
@@ -27,7 +26,6 @@ class BinaryHeap:
         while i * 2 < len(self.items):
             coi_idx = self.child_of_interest_for(i)
             print(f"min child for {self.items[i]} is {self.items[coi_idx]}")
-            # if self.items[min_child_idx] < self.items[i]:
             if self.fn(self.items[coi_idx], self.items[i]):
                 temp = self.items[coi_idx]
                 self.items[coi_idx] = self.items[i]
@@ -40,7 +38,6 @@ class BinaryHeap:
         if i * 2 + 1 >= len(self.items):
             return i * 2
         return i * 2 if self.fn(self.items[i * 2], self.items[i * 2 + 1]) else i * 2 + 1
-        # return i * 2 if self.items[i * 2] < self.items[i * 2 + 1] else i * 2 + 1
 
     def push(self, item: object):
         self.items.append(item)

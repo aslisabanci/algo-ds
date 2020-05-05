@@ -23,8 +23,3 @@ class ListDeque(DequeInterface):
 
     def remove_rear(self) -> object:
         return self._items.pop()
-
-
-ld = ListDeque()
-print(ld._items)
-print(isinstance(ld, ListDeque))
