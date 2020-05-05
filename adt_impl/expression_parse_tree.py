@@ -40,6 +40,7 @@ class ExpParseTree(BinaryNode):
         dot.view(filename="parse_tree", directory="./")
 
 
+# TODO: move to a main func
 exp = "(((47+392) * (50-2)) + ((3-1) / (136+14)))"
 parse_tree = ExpParseTree("")
 parse_tree.parse(exp)

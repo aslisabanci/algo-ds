@@ -20,12 +20,13 @@ class ParseTreeEvaluator:
             return int(parse_tree.key)
 
 
+# TODO: Do unit tests
 exp = "((((47+392) * 50)-2) + ((3-1) / (136+14)))"
-dandi = ExpParseTree("")
-dandi.parse(exp)
-dandi.appear()
+exp_tree = ExpParseTree("")
+exp_tree.parse(exp)
+exp_tree.appear()
 evaluator = ParseTreeEvaluator()
-parsed_eval = evaluator.evalx(dandi)
+parsed_eval = evaluator.evalx(exp_tree)
 print(parsed_eval)
 actual_result = (((47 + 392) * 50) - 2) + ((3 - 1) / (136 + 14))
 assert parsed_eval == actual_result
