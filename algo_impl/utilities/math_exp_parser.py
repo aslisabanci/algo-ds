@@ -7,7 +7,7 @@ def tokenize_with_regexp(exp: str) -> List:
     return re.findall("\s*([()+*/-]|\d+)", exp)
 
 
-def tokenize_davi_way(exp: str) -> List:
+def tokenize_cumulatively(exp: str) -> List:
     queue = Queue()
     cum_digit = ""
     for c in exp.replace(" ", ""):
@@ -25,7 +25,7 @@ def tokenize_davi_way(exp: str) -> List:
     return [queue.dequeue() for i in range(len(queue))]
 
 
-# # TODO: turn the following into unit tests
-# exp = "(3*5)+2"
-# print(f"regexp version      : {tokenize_with_regexp(exp)}")
-# print(f"davi version        : {tokenize_davi_way(exp)}")
+# TODO: turn the following into unit tests
+exp = "(3*5)+2"
+print(f"regexp version      : {tokenize_with_regexp(exp)}")
+print(f"davi version        : {tokenize_cumulatively(exp)}")
