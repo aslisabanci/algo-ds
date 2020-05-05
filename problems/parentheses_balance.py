@@ -25,15 +25,8 @@ def balanced_parantheses(input: str) -> bool:
     return stack.is_empty()
 
 
-def balanced_parantheses_generalized(input: str) -> bool:
-    pass
-
-
 # # TODO: add unit tests
 print(balanced_parantheses("   ((()))"))
 print(balanced_parantheses("((())"))
 print(balanced_parantheses("if len(string) == 0: return True"))
 print(balanced_parantheses("return True if stack.size()==0 else False)"))
-
-
-# # TODO: generalize to all types of parantheses
