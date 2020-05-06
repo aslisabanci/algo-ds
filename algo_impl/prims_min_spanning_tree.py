@@ -29,18 +29,18 @@ def create_spanning_tree(graph: Graph, starting_vertex: Vertex):
     return min_spanning_tree
 
 
-# TODO: Move to main func
-graph = Graph()
-graph.add_two_way_edge("A", "B", 2)
-graph.add_two_way_edge("A", "C", 3)
-graph.add_two_way_edge("B", "C", 1)
-graph.add_two_way_edge("B", "D", 1)
-graph.add_two_way_edge("B", "E", 4)
-graph.add_two_way_edge("C", "F", 5)
-graph.add_two_way_edge("D", "E", 1)
-graph.add_two_way_edge("E", "F", 1)
-graph.add_two_way_edge("F", "G", 1)
+if __name__ == "__main__":
+    graph = Graph()
+    graph.add_two_way_edge("A", "B", 2)
+    graph.add_two_way_edge("A", "C", 3)
+    graph.add_two_way_edge("B", "C", 1)
+    graph.add_two_way_edge("B", "D", 1)
+    graph.add_two_way_edge("B", "E", 4)
+    graph.add_two_way_edge("C", "F", 5)
+    graph.add_two_way_edge("D", "E", 1)
+    graph.add_two_way_edge("E", "F", 1)
+    graph.add_two_way_edge("F", "G", 1)
 
-min_spanning_tree = dict(create_spanning_tree(graph, graph.verts["A"]))
-for vert, connections in min_spanning_tree.items():
-    print(f"{vert.key}: {[conn.key for conn in connections]}")
+    min_spanning_tree = dict(create_spanning_tree(graph, graph.verts["A"]))
+    for vert, connections in min_spanning_tree.items():
+        print(f"{vert.key}: {[conn.key for conn in connections]}")

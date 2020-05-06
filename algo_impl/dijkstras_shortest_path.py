@@ -23,19 +23,20 @@ def calculate_distances(graph: Graph, starting_vertex: Vertex) -> Dict[Vertex, i
     return distances
 
 
-# TODO: Move to main func
-graph = Graph()
-graph.add_two_way_edge("U", "V", 2)
-graph.add_two_way_edge("U", "X", 1)
-graph.add_two_way_edge("V", "X", 2)
-graph.add_two_way_edge("U", "W", 5)
-graph.add_two_way_edge("V", "W", 3)
-graph.add_two_way_edge("W", "X", 3)
-graph.add_two_way_edge("W", "Z", 5)
-graph.add_two_way_edge("W", "Y", 1)
-graph.add_two_way_edge("Z", "Y", 1)
-graph.add_two_way_edge("X", "Y", 1)
+# TODO: Move to tests
+if __name__ == "__main__":
+    graph = Graph()
+    graph.add_two_way_edge("U", "V", 2)
+    graph.add_two_way_edge("U", "X", 1)
+    graph.add_two_way_edge("V", "X", 2)
+    graph.add_two_way_edge("U", "W", 5)
+    graph.add_two_way_edge("V", "W", 3)
+    graph.add_two_way_edge("W", "X", 3)
+    graph.add_two_way_edge("W", "Z", 5)
+    graph.add_two_way_edge("W", "Y", 1)
+    graph.add_two_way_edge("Z", "Y", 1)
+    graph.add_two_way_edge("X", "Y", 1)
 
-distances = calculate_distances(graph, graph.verts["X"])
-for vertex, dist in distances.items():
-    print(f"{vertex.key}: {dist}")
+    distances = calculate_distances(graph, graph.verts["X"])
+    for vertex, dist in distances.items():
+        print(f"{vertex.key}: {dist}")

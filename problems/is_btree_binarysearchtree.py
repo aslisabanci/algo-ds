@@ -42,17 +42,21 @@ def generate_bs_tree_example() -> BinaryNode:
     return bs_tree
 
 
-# TODO: Move tests
+# TODO: Move to tests
 if __name__ == "__main__":
     non_bs_tree = generate_non_bs_tree_example()
     bs_tree = generate_bs_tree_example()
 
     # Visualize to check how the trees looks like
     non_bs_dot = binary_tree_visualizer.visualize(non_bs_tree)
-    non_bs_dot.view(filename="not a search binary_tree", directory="./")
+    non_bs_dot.view(
+        filename="not a search binary_tree", directory="./visualization/examples/output"
+    )
 
     bs_dot = binary_tree_visualizer.visualize(bs_tree)
-    bs_dot.view(filename="a search binary_tree", directory="./")
+    bs_dot.view(
+        filename="a search binary_tree", directory="./visualization/examples/output"
+    )
 
     assert is_binary_tree_binary_search_tree(non_bs_tree) == False
     assert is_binary_tree_binary_search_tree(bs_tree) == True
