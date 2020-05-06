@@ -1,0 +1,32 @@
+digraph g {
+	node [fontname=Courier height=.1 shape=egg]
+	<adt_impl.expression_parse_tree.ExpParseTree object at 0x107fb8f50> [label="+"]
+	<adt_impl.binary_node.BinaryNode object at 0x108097e90> [label="-"]
+	<adt_impl.expression_parse_tree.ExpParseTree object at 0x107fb8f50> -> <adt_impl.binary_node.BinaryNode object at 0x108097e90>
+	<adt_impl.binary_node.BinaryNode object at 0x10809d4d0> [label="*"]
+	<adt_impl.binary_node.BinaryNode object at 0x108097e90> -> <adt_impl.binary_node.BinaryNode object at 0x10809d4d0>
+	<adt_impl.binary_node.BinaryNode object at 0x10809dd10> [label="+"]
+	<adt_impl.binary_node.BinaryNode object at 0x10809d4d0> -> <adt_impl.binary_node.BinaryNode object at 0x10809dd10>
+	<adt_impl.binary_node.BinaryNode object at 0x10809d990> [label=47]
+	<adt_impl.binary_node.BinaryNode object at 0x10809dd10> -> <adt_impl.binary_node.BinaryNode object at 0x10809d990>
+	<adt_impl.binary_node.BinaryNode object at 0x10809d810> [label=392]
+	<adt_impl.binary_node.BinaryNode object at 0x10809dd10> -> <adt_impl.binary_node.BinaryNode object at 0x10809d810>
+	<adt_impl.binary_node.BinaryNode object at 0x10809d950> [label=50]
+	<adt_impl.binary_node.BinaryNode object at 0x10809d4d0> -> <adt_impl.binary_node.BinaryNode object at 0x10809d950>
+	<adt_impl.binary_node.BinaryNode object at 0x10809d690> [label=2]
+	<adt_impl.binary_node.BinaryNode object at 0x108097e90> -> <adt_impl.binary_node.BinaryNode object at 0x10809d690>
+	<adt_impl.binary_node.BinaryNode object at 0x10809da90> [label="/"]
+	<adt_impl.expression_parse_tree.ExpParseTree object at 0x107fb8f50> -> <adt_impl.binary_node.BinaryNode object at 0x10809da90>
+	<adt_impl.binary_node.BinaryNode object at 0x10809d850> [label="-"]
+	<adt_impl.binary_node.BinaryNode object at 0x10809da90> -> <adt_impl.binary_node.BinaryNode object at 0x10809d850>
+	<adt_impl.binary_node.BinaryNode object at 0x10809d910> [label=3]
+	<adt_impl.binary_node.BinaryNode object at 0x10809d850> -> <adt_impl.binary_node.BinaryNode object at 0x10809d910>
+	<adt_impl.binary_node.BinaryNode object at 0x10809db50> [label=1]
+	<adt_impl.binary_node.BinaryNode object at 0x10809d850> -> <adt_impl.binary_node.BinaryNode object at 0x10809db50>
+	<adt_impl.binary_node.BinaryNode object at 0x10809d6d0> [label="+"]
+	<adt_impl.binary_node.BinaryNode object at 0x10809da90> -> <adt_impl.binary_node.BinaryNode object at 0x10809d6d0>
+	<adt_impl.binary_node.BinaryNode object at 0x10809da50> [label=136]
+	<adt_impl.binary_node.BinaryNode object at 0x10809d6d0> -> <adt_impl.binary_node.BinaryNode object at 0x10809da50>
+	<adt_impl.binary_node.BinaryNode object at 0x10809dad0> [label=14]
+	<adt_impl.binary_node.BinaryNode object at 0x10809d6d0> -> <adt_impl.binary_node.BinaryNode object at 0x10809dad0>
+}

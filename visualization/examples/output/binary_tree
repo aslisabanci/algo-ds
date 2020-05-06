@@ -1,0 +1,16 @@
+digraph g {
+	node [fontname=Courier height=.1 shape=egg]
+	<adt_impl.binary_node.BinaryNode object at 0x10298e190> [label=6]
+	<adt_impl.binary_node.BinaryNode object at 0x10298ed50> [label=3]
+	<adt_impl.binary_node.BinaryNode object at 0x10298e190> -> <adt_impl.binary_node.BinaryNode object at 0x10298ed50>
+	<adt_impl.binary_node.BinaryNode object at 0x10296d850> [label=2]
+	<adt_impl.binary_node.BinaryNode object at 0x10298ed50> -> <adt_impl.binary_node.BinaryNode object at 0x10296d850>
+	<adt_impl.binary_node.BinaryNode object at 0x10298ee50> [label=4]
+	<adt_impl.binary_node.BinaryNode object at 0x10298ed50> -> <adt_impl.binary_node.BinaryNode object at 0x10298ee50>
+	<adt_impl.binary_node.BinaryNode object at 0x10298e1d0> [label=10]
+	<adt_impl.binary_node.BinaryNode object at 0x10298e190> -> <adt_impl.binary_node.BinaryNode object at 0x10298e1d0>
+	<adt_impl.binary_node.BinaryNode object at 0x102997450> [label=5]
+	<adt_impl.binary_node.BinaryNode object at 0x10298e1d0> -> <adt_impl.binary_node.BinaryNode object at 0x102997450>
+	<adt_impl.binary_node.BinaryNode object at 0x102997390> [label=13]
+	<adt_impl.binary_node.BinaryNode object at 0x10298e1d0> -> <adt_impl.binary_node.BinaryNode object at 0x102997390>
+}

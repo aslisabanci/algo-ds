@@ -1,0 +1,19 @@
+// Graph
+digraph {
+	graph [fixedsize=false]
+	node [fillcolor=coral fontname=Courier style=filled]
+	<adt_impl.graph.Vertex object at 0x106b96a50> [label=A]
+	<adt_impl.graph.Vertex object at 0x106b96a50> -> <adt_impl.graph.Vertex object at 0x106b96e90>
+	<adt_impl.graph.Vertex object at 0x106b96a50> -> <adt_impl.graph.Vertex object at 0x106bb5290>
+	<adt_impl.graph.Vertex object at 0x106b96e90> [label=D]
+	<adt_impl.graph.Vertex object at 0x106b96e90> -> <adt_impl.graph.Vertex object at 0x106bb5b50>
+	<adt_impl.graph.Vertex object at 0x106bb5290> [label=B]
+	<adt_impl.graph.Vertex object at 0x106bb5290> -> <adt_impl.graph.Vertex object at 0x106bb5990>
+	<adt_impl.graph.Vertex object at 0x106bb5290> -> <adt_impl.graph.Vertex object at 0x106b96e90>
+	<adt_impl.graph.Vertex object at 0x106bb5990> [label=C]
+	<adt_impl.graph.Vertex object at 0x106bb5b50> [label=E]
+	<adt_impl.graph.Vertex object at 0x106bb5b50> -> <adt_impl.graph.Vertex object at 0x106bb5a50>
+	<adt_impl.graph.Vertex object at 0x106bb5b50> -> <adt_impl.graph.Vertex object at 0x106bb5290>
+	<adt_impl.graph.Vertex object at 0x106bb5a50> [label=F]
+	<adt_impl.graph.Vertex object at 0x106bb5a50> -> <adt_impl.graph.Vertex object at 0x106bb5990>
+}

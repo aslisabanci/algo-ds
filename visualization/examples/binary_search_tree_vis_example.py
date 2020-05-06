@@ -9,4 +9,4 @@ if __name__ == "__main__":
     bst[0] = "sunshine"
 
     dot = binary_tree_visualizer.visualize(bst.root)
-    dot.view(filename="binary_search_tree", directory="./")
+    dot.view(filename="binary_search_tree", directory="./visualization/examples/output")

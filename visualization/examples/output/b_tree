@@ -1,0 +1,12 @@
+digraph g {
+	node [fontname=Courier height=.1 shape=egg]
+	<adt_impl.binary_node.BinaryNode object at 0x10a173fd0> [label=root]
+	<adt_impl.binary_node.BinaryNode object at 0x10a193390> [label=left3]
+	<adt_impl.binary_node.BinaryNode object at 0x10a173fd0> -> <adt_impl.binary_node.BinaryNode object at 0x10a193390>
+	<adt_impl.binary_node.BinaryNode object at 0x10a193a50> [label=left2]
+	<adt_impl.binary_node.BinaryNode object at 0x10a193390> -> <adt_impl.binary_node.BinaryNode object at 0x10a193a50>
+	<adt_impl.binary_node.BinaryNode object at 0x10a193b50> [label=left1]
+	<adt_impl.binary_node.BinaryNode object at 0x10a193a50> -> <adt_impl.binary_node.BinaryNode object at 0x10a193b50>
+	<adt_impl.binary_node.BinaryNode object at 0x10a19b090> [label="I know, right?"]
+	<adt_impl.binary_node.BinaryNode object at 0x10a173fd0> -> <adt_impl.binary_node.BinaryNode object at 0x10a19b090>
+}
