@@ -37,11 +37,11 @@ class ExpParseTree(BinaryNode):
 
     def appear(self):
         dot = binary_tree_visualizer.visualize(self)
-        dot.view(filename="parse_tree", directory="./")
+        dot.view(filename="parse_tree", directory="./visualization/examples/output")
 
 
-# TODO: move to a main func
-# exp = "((((47 + 392) * 50) - 2)) + ((3 - 1) / (136 + 14))"
-# parse_tree = ExpParseTree("")
-# parse_tree.parse(exp)
-# parse_tree.appear()
+if __name__ == "__main__":
+    exp = "((((47 + 392) * 50) - 2)) + ((3 - 1) / (136 + 14))"
+    parse_tree = ExpParseTree("")
+    parse_tree.parse(exp)
+    parse_tree.appear()
